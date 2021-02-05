@@ -1,0 +1,152 @@
+
+.kartsection{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+  padding: 10px;
+}
+.kart{
+  
+ 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: left;
+    padding: 30px;
+    cursor: pointer;
+    width: 300px;
+
+    justify-content:top;
+    
+
+}
+.kartimg{
+    overflow: hidden;
+    border-radius: 30px;
+    height: 400px;
+    position: relative;
+}
+.indirimvarmi{
+    position: absolute;
+    top:20px;
+    left: 20px;
+  
+    padding:10px;
+    font-size: 12px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.indirimvarmi img{
+    
+    color:white;
+    max-width: 60px;
+    animation:indirim 1s infinite alternate-reverse;
+}
+
+@keyframes indirim{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+}
+
+.kartimg .img{
+
+    width: 300px;
+    object-fit: fill;
+    transition: all 0.5s;
+
+}
+
+.kart:hover .kartimg .img{
+  
+    transform: scale(1.1);
+}
+
+.kart button{
+    border:none;
+    padding:10px;
+    color: #000;
+    background: none;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 0;
+    font-weight: 600;
+}
+.kart button svg{
+    border: 1px solid #f27a1a;
+    padding: 2px;
+    font-size: 20px;
+    border-radius: 180px;
+    margin-right: 10px;
+    color: #f27a1a;
+    transition: all 0.5s;
+}
+.kart button:hover{
+
+    color: #f27a1a;
+    
+}
+
+.kart button:hover svg{
+    border: 1px solid #f27a1a;
+    background:#f27a1a;
+    color: white;
+    transform:scale(1.5);
+    
+}
+
+
+.oylama{
+    display:flex;
+    color: #000;
+}
+.oylama .oyverildi{
+    color: #f27a1a;
+}
+
+.kartdetails{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    
+}
+
+.kartdetails p{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-bottom: 0!important;
+}
+.kartdetails h5{
+    
+    
+}
+.kartdetails .orjinalfiyat-indirim{
+    color: black;
+    
+    text-decoration: line-through;
+}
+.kartdetails .orjinalfiyat{
+    color: black;
+    
+}
+.kartdetails .indirimfiyat{
+   
+    color:#f27a1a;
+ 
+}
+
+.kartname{
+    height: 40px;
+}

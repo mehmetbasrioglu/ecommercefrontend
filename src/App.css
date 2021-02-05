@@ -1,38 +1,169 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content:center;
   align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  height: fit-content;
+  width: 100%;
+  z-index: 99;
+}
+
+.header .üstheader{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.header .logo{
+  flex: 1;
+  margin-left: 20px;
+
+
+}
+.header .logo img{
+  max-width: 120px;
+}
+
+.header .inputsection{
+  flex: 4;
+  margin-left: 100px;
+  background: #f1f1f1;
+  height: 50px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-sizing: border-box;  
+  display: flex;
+  align-items: center;
+  
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+.header .inputsection input{
+  width: 600px;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 10px 40px 10px 15px;
+    box-sizing: border-box;
+    outline: 0;
+ 
+}
+
+.header .inputsection svg{
+  margin: 20px;
+  font-size:25px;
+}
+.header .inputsection_focus{
+  border: 2px solid #f27a1a;
+  background-color: white;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 3px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.header .islemler{
+  margin-left: 20px;
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 1px;
+}
+.header .islemler svg{
+  margin-right: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  padding:2px;
+  border-radius: 180px;
+  transition: all 0.3s;
+}
+.header .islemler span{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  width:max-content;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.header .islemler span:hover{
+  color: #f27a1a;
+}
+
+
+
+.header .islemler span:hover svg{
+  color: #f27a1a;
+  fill: currentColor;
+  border: 2px solid #f27a1a;
+  padding:2px;
+  border-radius: 180px;
+}
+
+.header .islemler .avatar{
+  border: 1px solid black;
+  border-radius: 180px;
+  padding: 3px;
+}
+
+.header .islemler .avatar:hover{
+  border: 1px solid #f27a1a;
+ 
+}
+
+.altkisayol ul{
+  list-style: none;
+}
+
+.altkisayol ul li{
+  margin: 5px;
+  display:inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 180px;
+  transition: all 0.2s;
+
+}
+.altkisayol ul li span{
+  display: flex;
+  align-items: center;
+}
+.altkisayol ul li span svg{
+  margin-right:10px;
+}
+.altkisayol ul li:hover{
   color: white;
+  background:#f27a1a;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.margin{
+  margin-top: 150px;
 }

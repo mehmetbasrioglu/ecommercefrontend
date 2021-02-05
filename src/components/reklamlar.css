@@ -1,0 +1,111 @@
+.parent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    
+    }
+    
+    .div1 { 
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+     }
+     .div1 .reklam{
+         margin-bottom: 20px;
+         border-radius: 30px;
+         overflow: hidden;
+         cursor: pointer;
+         border: 1px solid black;
+         display: flex;
+         flex-direction: column;
+         
+     }
+
+     .div1 .reklam .img{
+         overflow: hidden;
+     }
+     .div1 .reklam img{
+        width: 800px;
+        height: 200px;
+        transition: all 0.5s;
+        
+     }
+     .div1 .reklam:hover img{
+        transform: scale(1.1);
+        
+     }
+     .div1 .reklamsub{
+         background:black;
+         color:white;
+         padding-left: 20px;
+         padding-bottom: 2px;
+         text-align: center;
+         display: flex;
+         transition: all 0.2s;
+         align-items: center;
+     }
+
+     .div1 .reklam:hover .reklamsub{
+        background:#f27a1a;
+
+     
+    }
+
+    .minireklam{
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 30px;
+        overflow: hidden;
+      
+    }
+ 
+    .exsmallreklam{
+        margin: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .exsmallreklam img{
+        object-fit: fill;
+        width: 100%;
+        height: 150px;
+    }
+
+    .smallreklam{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 50px;
+    }
+
+    .smallreklam .exsmallreklam .reklamsub{
+        background:black;
+        color:white;
+        padding-left: 20px;
+        padding-bottom: 2px;
+        text-align: center;
+        display: flex;
+        transition: all 0.2s;
+        align-items: center;
+    }
+
+    .smallreklam .exsmallreklam:hover .reklamsub{
+       background:#f27a1a;
+
+    
+   }
+   .smallreklam .exsmallreklam .img{
+    overflow: hidden;
+}
+.smallreklam .exsmallreklam img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    
+ }
+ .smallreklam .exsmallreklam:hover img{
+    transform: scale(1.1);
+    
+ }

@@ -1,0 +1,183 @@
+.sepetim{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    margin-top: 60px;
+}
+
+.urunler{
+
+    display:flex;
+    flex-direction: column;
+    width:800px;
+
+}
+.urunlerheader{
+    flex: 1;
+    display: flex;
+    
+    align-items: center;
+    
+    
+}
+
+.urunlerheader h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.urunbutton{
+    flex: 1;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.urunbutton button{
+    border:none;
+    background: transparent;
+    padding:5px 60px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.urunbutton button:hover{
+    
+    border: 1px solid #f27a1a;
+    color:#f27a1a;
+   
+}
+
+.urunlerlistesi{
+    display:flex;
+    flex-direction: column;
+}
+.urun_item{
+    display:flex;
+    align-items: center;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+.urun_item img{
+    width:60px;
+    max-width: 60px;
+    padding:10px;
+    border-radius: 20px;
+}
+.urun_item h1{
+    font-size: 15px;
+    font-weight: 400;
+}
+.urun_info{
+    display:flex;
+    flex-direction: column;
+    justify-content:top;
+    align-items: left;
+}
+
+.urun_info .hizliteslimat{
+color: #00c200;
+}
+.urun_info .normalteslimat{
+    color: gray;
+    }
+.urun_saticisi{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 20px;
+    justify-content: space-between;
+    background-color: #fafafa;
+    border: 1px solid #e2e2e2;
+}
+
+.urun_saticisi h1{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.urun_fiyat{
+    flex:1;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+.urun_fiyat span{
+    margin-right: 10px;
+}
+
+.urun_saticisi-kargo{
+    flex: 1;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end
+}
+
+.yenifiyat{
+    text-decoration: line-through;
+}
+.indirimlifiyat{
+    text-decoration: none;
+    color:#f27a1a;
+}
+
+.siparisonayla{
+    width: 250px;
+    
+}
+.siparisonayla button{
+    width:100%;
+    padding: 5px 60px;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #f77d1a;
+    border: 1px solid #f77d1a;
+    display: block;
+    transition-property: all;
+}
+
+.siparisozeti{
+    border:1px solid lightgray;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.siparisozeti h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.detay{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 13px;
+    margin: 10px;
+}
+.fiyatsag{
+    flex:1;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    color:#f27a1a;
+
+}
+
+.urundetaylari{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.toplamfiyati{
+    font-size: 20px;
+}

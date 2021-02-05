@@ -1,0 +1,115 @@
+.pnf-404{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://img-trendyol.mncdn.com/assets/banner/2019/errorPage/404/aug/img/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex!important;
+    
+    flex-direction: column!important;
+  }
+  .pnf-left_and_right{
+   
+      width: 150px;
+      display: block;
+      margin-top: 25px;
+      cursor: pointer;
+  }
+
+  .pnf-center{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: center;
+      color: white;
+  }
+
+  .pnf-center p{
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing:5px;
+  }
+.pnf-input{
+    display:flex;
+    background: white;
+    width: 600px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.pnf-input input {
+    width: 100%;
+    height: 100%;
+    background: 0 0;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    padding-left: 10px;
+    outline: 0;
+    border: none;
+}
+.pnf-input .icon{
+    min-width: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 2px solid #200655;
+    color: #17c577;
+    margin: 10px;
+    font-size: 30px;
+}
+  .pnf-center .pnf-search{
+    height: 100%;
+    width: 20%;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    background: #17c577;
+    transition: all 0.4s ease-out, color 0.4s ease-out;
+    font-weight: 500;
+  }
+
+  .pnf-center h1{
+    font-size: 11rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 3px #6c9db7;
+    letter-spacing: 5px;
+    z-index: 29;
+  }
+
+  .pnf-container{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .pnf-git{
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    border: none;
+    outline: 0;
+    padding: 14px 7px 14px 7px;
+    color: #FFFFFF;
+    background: rgb(106,131,187);
+    transition: all 0.8s ease-out 0s;
+  }

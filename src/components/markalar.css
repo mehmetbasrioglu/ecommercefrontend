@@ -1,0 +1,41 @@
+.markalarsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.markalar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-flow: column wrap;
+}
+.markalar .imgmarka{
+
+    border-radius: 180px;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+.markalar .imgmarka:hover{
+    border: 1px solid #f27a1a;
+
+}
+
+
+.markalar .imgmarka .MuiAvatar-root {
+    width: 80px;
+    height: 80px;
+}
+
+.markalar p{
+    margin:10px;
+}

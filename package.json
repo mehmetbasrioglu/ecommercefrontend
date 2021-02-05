@@ -3,19 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rimraf ./build && react-scripts build && rimraf ./build/**/*.map",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
